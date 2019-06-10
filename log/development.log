@@ -1,0 +1,474 @@
+
+
+Started GET "/" for 127.0.0.1 at 2015-05-14 23:02:27 +0200
+[Rollbar] Reporting exception: FATAL:  database "flashcards_course_development" does not exist
+Run `$ bin/rake db:create db:migrate` to create your database
+[Rollbar] Scheduling payload
+[Rollbar] Sending payload
+[Rollbar] Got unexpected status code from Rollbar api: 400
+[Rollbar] Response: {
+  "err": 1,
+  "message": "access token required"
+}
+[Rollbar] Details: https://rollbar.com/instance/uuid?uuid=6688723a-dbe8-49d3-81cf-e5f3f9d0d44e (only available if report was successful)
+[Rollbar] Exception uuid saved in env: 6688723a-dbe8-49d3-81cf-e5f3f9d0d44e
+
+ActiveRecord::NoDatabaseError (FATAL:  database "flashcards_course_development" does not exist
+Run `$ bin/rake db:create db:migrate` to create your database):
+  activerecord (4.1.9) lib/active_record/connection_adapters/postgresql_adapter.rb:898:in `rescue in connect'
+  activerecord (4.1.9) lib/active_record/connection_adapters/postgresql_adapter.rb:888:in `connect'
+  activerecord (4.1.9) lib/active_record/connection_adapters/postgresql_adapter.rb:568:in `initialize'
+  activerecord (4.1.9) lib/active_record/connection_adapters/postgresql_adapter.rb:41:in `new'
+  activerecord (4.1.9) lib/active_record/connection_adapters/postgresql_adapter.rb:41:in `postgresql_connection'
+  activerecord (4.1.9) lib/active_record/connection_adapters/abstract/connection_pool.rb:435:in `new_connection'
+  activerecord (4.1.9) lib/active_record/connection_adapters/abstract/connection_pool.rb:445:in `checkout_new_connection'
+  activerecord (4.1.9) lib/active_record/connection_adapters/abstract/connection_pool.rb:416:in `acquire_connection'
+  activerecord (4.1.9) lib/active_record/connection_adapters/abstract/connection_pool.rb:351:in `block in checkout'
+  /Users/kirillshirinkin/.rbenv/versions/2.1.4/lib/ruby/2.1.0/monitor.rb:211:in `mon_synchronize'
+  activerecord (4.1.9) lib/active_record/connection_adapters/abstract/connection_pool.rb:350:in `checkout'
+  activerecord (4.1.9) lib/active_record/connection_adapters/abstract/connection_pool.rb:265:in `block in connection'
+  /Users/kirillshirinkin/.rbenv/versions/2.1.4/lib/ruby/2.1.0/monitor.rb:211:in `mon_synchronize'
+  activerecord (4.1.9) lib/active_record/connection_adapters/abstract/connection_pool.rb:264:in `connection'
+  activerecord (4.1.9) lib/active_record/connection_adapters/abstract/connection_pool.rb:541:in `retrieve_connection'
+  activerecord (4.1.9) lib/active_record/connection_handling.rb:113:in `retrieve_connection'
+  activerecord (4.1.9) lib/active_record/connection_handling.rb:87:in `connection'
+  activerecord (4.1.9) lib/active_record/migration.rb:388:in `check_pending!'
+  activerecord (4.1.9) lib/active_record/migration.rb:377:in `call'
+  newrelic_rpm (3.11.2.286) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  actionpack (4.1.9) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.9) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.9) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  newrelic_rpm (3.11.2.286) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  actionpack (4.1.9) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  newrelic_rpm (3.11.2.286) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  actionpack (4.1.9) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  newrelic_rpm (3.11.2.286) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  rollbar (1.5.0) lib/rollbar/middleware/rails/rollbar.rb:24:in `block in call'
+  rollbar (1.5.0) lib/rollbar.rb:761:in `scoped'
+  rollbar (1.5.0) lib/rollbar/middleware/rails/rollbar.rb:22:in `call'
+  newrelic_rpm (3.11.2.286) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  actionpack (4.1.9) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  rollbar (1.5.0) lib/rollbar/middleware/rails/show_exceptions.rb:22:in `call_with_rollbar'
+  newrelic_rpm (3.11.2.286) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  actionpack (4.1.9) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  newrelic_rpm (3.11.2.286) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  railties (4.1.9) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.9) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.9) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.9) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.9) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.9) lib/rails/rack/logger.rb:20:in `call'
+  newrelic_rpm (3.11.2.286) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  actionpack (4.1.9) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  newrelic_rpm (3.11.2.286) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  newrelic_rpm (3.11.2.286) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  newrelic_rpm (3.11.2.286) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  activesupport (4.1.9) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  newrelic_rpm (3.11.2.286) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  newrelic_rpm (3.11.2.286) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  actionpack (4.1.9) lib/action_dispatch/middleware/static.rb:84:in `call'
+  newrelic_rpm (3.11.2.286) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  newrelic_rpm (3.11.2.286) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  railties (4.1.9) lib/rails/engine.rb:514:in `call'
+  railties (4.1.9) lib/rails/application.rb:144:in `call'
+  newrelic_rpm (3.11.2.286) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/kirillshirinkin/.rbenv/versions/2.1.4/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/kirillshirinkin/.rbenv/versions/2.1.4/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/kirillshirinkin/.rbenv/versions/2.1.4/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/kirillshirinkin/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/actionpack-4.1.9/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.2ms)
+  Rendered /Users/kirillshirinkin/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/actionpack-4.1.9/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendered /Users/kirillshirinkin/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/actionpack-4.1.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /Users/kirillshirinkin/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/actionpack-4.1.9/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (24.4ms)
+  [1m[36m (14.8ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" character varying(255) NOT NULL) [0m
+  [1m[35m (4.8ms)[0m  CREATE UNIQUE INDEX  "unique_schema_migrations" ON "schema_migrations"  ("version")
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateCards (20150324181429)
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (8.1ms)[0m  [1mCREATE TABLE "cards" ("id" serial primary key, "original" text, "translated" text, "review" date, "created_at" timestamp, "updated_at" timestamp) [0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20150324181429"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+Migrating to RenameOriginalFromCards (20150325070602)
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36m (1.3ms)[0m  [1mALTER TABLE "cards" RENAME COLUMN "original" TO "original_text"[0m
+  [1m[35m (0.2ms)[0m  ALTER TABLE "cards" RENAME COLUMN "translated" TO "translated_text"
+  [1m[36m (0.2ms)[0m  [1mALTER TABLE "cards" RENAME COLUMN "review" TO "review_date"[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20150325070602"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+Migrating to CreateUsers (20150327203129)
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (3.7ms)[0m  [1mCREATE TABLE "users" ("id" serial primary key, "email" character varying(255), "password" character varying(255), "created_at" timestamp, "updated_at" timestamp) [0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20150327203129"]]
+  [1m[36m (1.8ms)[0m  [1mCOMMIT[0m
+Migrating to AddUserIdToCards (20150327203526)
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36m (1.1ms)[0m  [1mALTER TABLE "cards" ADD COLUMN "user_id" integer[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20150327203526"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+Migrating to ChangeUserIdFieldFromCards (20150327220548)
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.4ms)[0m  [1mALTER TABLE "cards" ALTER COLUMN "user_id" TYPE integer[0m
+  [1m[35m (0.2ms)[0m  ALTER TABLE "cards" ALTER "user_id" SET NOT NULL
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ($1)[0m  [["version", "20150327220548"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+Migrating to SorceryCore (20150329103805)
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.3ms)[0m  ALTER TABLE "users" ALTER COLUMN "email" TYPE character varying(255)
+  [1m[36m (0.2ms)[0m  [1mALTER TABLE "users" ALTER "email" SET NOT NULL[0m
+  [1m[35m (0.2ms)[0m  ALTER TABLE "users" RENAME COLUMN "password" TO "crypted_password"
+  [1m[36m (0.4ms)[0m  [1mALTER TABLE "users" ADD COLUMN "salt" character varying(255)[0m
+  [1m[35m (1.3ms)[0m  CREATE UNIQUE INDEX  "index_users_on_email" ON "users"  ("email")
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ($1)[0m  [["version", "20150329103805"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+Migrating to SorceryRememberMe (20150329103806)
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.4ms)[0m  ALTER TABLE "users" ADD COLUMN "remember_me_token" character varying(255)
+  [1m[36m (0.3ms)[0m  [1mALTER TABLE "users" ADD COLUMN "remember_me_token_expires_at" timestamp[0m
+  [1m[35m (0.9ms)[0m  CREATE  INDEX  "index_users_on_remember_me_token" ON "users"  ("remember_me_token")
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ($1)[0m  [["version", "20150329103806"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+Migrating to SorceryResetPassword (20150329103807)
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.5ms)[0m  ALTER TABLE "users" ADD COLUMN "reset_password_token" character varying(255)
+  [1m[36m (0.3ms)[0m  [1mALTER TABLE "users" ADD COLUMN "reset_password_token_expires_at" timestamp[0m
+  [1m[35m (0.2ms)[0m  ALTER TABLE "users" ADD COLUMN "reset_password_email_sent_at" timestamp
+  [1m[36m (1.0ms)[0m  [1mCREATE  INDEX  "index_users_on_reset_password_token" ON "users"  ("reset_password_token")[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20150329103807"]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+Migrating to SorceryExternal (20150329171607)
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (5.4ms)[0m  [1mCREATE TABLE "authentications" ("id" serial primary key, "user_id" integer NOT NULL, "provider" character varying(255) NOT NULL, "uid" character varying(255) NOT NULL, "created_at" timestamp, "updated_at" timestamp) [0m
+  [1m[35m (1.1ms)[0m  CREATE  INDEX  "index_authentications_on_provider_and_uid" ON "authentications"  ("provider", "uid")
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ($1)[0m  [["version", "20150329171607"]]
+  [1m[35m (0.5ms)[0m  COMMIT
+Migrating to ChangeEmailTypeFromUsers (20150329200538)
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35m (2.8ms)[0m  ALTER TABLE "users" ALTER COLUMN "email" TYPE character varying(255)
+  [1m[36m (0.2ms)[0m  [1mALTER TABLE "users" ALTER "email" DROP NOT NULL[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20150329200538"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+Migrating to AddImageToCards (20150330165146)
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.3ms)[0m  [1mALTER TABLE "cards" ADD COLUMN "image" character varying(255)[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20150330165146"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+Migrating to CreateBlocks (20150330194042)
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (3.7ms)[0m  [1mCREATE TABLE "blocks" ("id" serial primary key, "title" character varying(255) NOT NULL, "created_at" timestamp, "updated_at" timestamp) [0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20150330194042"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+Migrating to AddBlockIdToCards (20150330194306)
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36m (0.4ms)[0m  [1mALTER TABLE "cards" ADD COLUMN "block_id" integer NOT NULL[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20150330194306"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+Migrating to AddCurrentBlockToUsers (20150330194536)
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.3ms)[0m  [1mALTER TABLE "users" ADD COLUMN "current_block" integer[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20150330194536"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+Migrating to AddUserIdToBlocks (20150330200230)
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.3ms)[0m  [1mALTER TABLE "blocks" ADD COLUMN "user_id" integer NOT NULL[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20150330200230"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+Migrating to RenameCurrentBlockToCurrentBlockIdFromUsers (20150331102819)
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mALTER TABLE "users" RENAME COLUMN "current_block" TO "current_block_id"[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20150331102819"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+Migrating to AddReviewStepToCards (20150401155428)
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36m (1.2ms)[0m  [1mALTER TABLE "cards" ADD COLUMN "review_step" integer[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20150401155428"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+Migrating to ChangeReviewStepForCards (20150401155753)
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.3ms)[0m  [1mALTER TABLE "cards" ALTER COLUMN "review_step" TYPE integer[0m
+  [1m[35m (0.4ms)[0m  ALTER TABLE "cards" ALTER COLUMN "review_step" SET DEFAULT 0
+  [1m[36m (0.5ms)[0m  [1mUPDATE "cards" SET "review_step"=0 WHERE "review_step" IS NULL[0m
+  [1m[35m (0.3ms)[0m  ALTER TABLE "cards" ALTER "review_step" SET NOT NULL
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ($1)[0m  [["version", "20150401155753"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+Migrating to ChangeReviewDateForCards (20150401160441)
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (5.4ms)[0m  ALTER TABLE "cards" ALTER COLUMN "review_date" TYPE timestamp
+  [1m[36m (0.2ms)[0m  [1mALTER TABLE "cards" ALTER "review_date" SET NOT NULL[0m
+  [1m[35m (0.4ms)[0m  ALTER TABLE "cards" ALTER COLUMN "review_step" TYPE integer
+  [1m[36m (0.3ms)[0m  [1mALTER TABLE "cards" ALTER COLUMN "review_step" SET DEFAULT 1[0m
+  [1m[35m (0.2ms)[0m  UPDATE "cards" SET "review_step"=1 WHERE "review_step" IS NULL
+  [1m[36m (0.1ms)[0m  [1mALTER TABLE "cards" ALTER "review_step" SET NOT NULL[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20150401160441"]]
+  [1m[36m (0.9ms)[0m  [1mCOMMIT[0m
+Migrating to AddReviewAttemptToCards (20150402104316)
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (4.9ms)[0m  [1mALTER TABLE "cards" ADD COLUMN "review_attempt" integer DEFAULT 1 NOT NULL[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20150402104316"]]
+  [1m[36m (0.8ms)[0m  [1mCOMMIT[0m
+Migrating to AddLocaleToUsers (20150403222932)
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.6ms)[0m  [1mALTER TABLE "users" ADD COLUMN "locale" character varying(255)[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20150403222932"]]
+  [1m[36m (1.8ms)[0m  [1mCOMMIT[0m
+Migrating to ChangeLocaleForUsers (20150404104501)
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.5ms)[0m  [1mALTER TABLE "users" ALTER COLUMN "locale" TYPE character varying(255)[0m
+  [1m[35m (0.3ms)[0m  ALTER TABLE "users" ALTER COLUMN "locale" SET DEFAULT ''
+  [1m[36m (0.6ms)[0m  [1mUPDATE "users" SET "locale"='' WHERE "locale" IS NULL[0m
+  [1m[35m (0.2ms)[0m  ALTER TABLE "users" ALTER "locale" SET NOT NULL
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ($1)[0m  [["version", "20150404104501"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+Migrating to ChangeLocaleDefaultForUsers (20150405115143)
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.6ms)[0m  ALTER TABLE "users" ALTER COLUMN "locale" TYPE character varying(255)
+  [1m[36m (0.1ms)[0m  [1mALTER TABLE "users" ALTER "locale" DROP NOT NULL[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20150405115143"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+Migrating to ChangeLocaleNullForUsers (20150405165550)
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.6ms)[0m  [1mALTER TABLE "users" ALTER COLUMN "locale" TYPE character varying(255)[0m
+  [1m[35m (0.3ms)[0m  ALTER TABLE "users" ALTER "locale" SET NOT NULL
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ($1)[0m  [["version", "20150405165550"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+Migrating to ChangeLocaleDefaultFalseForUsers (20150405175629)
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.7ms)[0m  ALTER TABLE "users" ALTER COLUMN "locale" TYPE character varying(255)
+  [1m[36m (0.4ms)[0m  [1mALTER TABLE "users" ALTER COLUMN "locale" SET DEFAULT NULL[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20150405175629"]]
+  [1m[36m (0.6ms)[0m  [1mCOMMIT[0m
+Migrating to ChangeLocaleNullTrueForUsers (20150405180053)
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.7ms)[0m  [1mALTER TABLE "users" ALTER COLUMN "locale" TYPE character varying(255)[0m
+  [1m[35m (0.2ms)[0m  ALTER TABLE "users" ALTER "locale" DROP NOT NULL
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ($1)[0m  [["version", "20150405180053"]]
+  [1m[35m (1.0ms)[0m  COMMIT
+Migrating to ChangeFieldsForCards (20150406123839)
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.3ms)[0m  ALTER TABLE "cards" RENAME COLUMN "review_attempt" TO "quality"
+  [1m[36m (0.2ms)[0m  [1mALTER TABLE "cards" RENAME COLUMN "review_step" TO "interval"[0m
+  [1m[35m (0.6ms)[0m  ALTER TABLE "cards" ALTER COLUMN "quality" TYPE integer
+  [1m[36m (0.3ms)[0m  [1mALTER TABLE "cards" ALTER COLUMN "quality" SET DEFAULT 5[0m
+  [1m[35m (0.3ms)[0m  UPDATE "cards" SET "quality"=5 WHERE "quality" IS NULL
+  [1m[36m (0.1ms)[0m  [1mALTER TABLE "cards" ALTER "quality" SET NOT NULL[0m
+  [1m[35m (0.5ms)[0m  ALTER TABLE "cards" ALTER COLUMN "interval" TYPE integer
+  [1m[36m (0.5ms)[0m  [1mALTER TABLE "cards" ALTER COLUMN "interval" SET DEFAULT 1[0m
+  [1m[35m (0.4ms)[0m  UPDATE "cards" SET "interval"=1 WHERE "interval" IS NULL
+  [1m[36m (0.2ms)[0m  [1mALTER TABLE "cards" ALTER "interval" SET NOT NULL[0m
+  [1m[35m (5.9ms)[0m  ALTER TABLE "cards" ADD COLUMN "repeat" integer DEFAULT 1 NOT NULL
+  [1m[36m (6.2ms)[0m  [1mALTER TABLE "cards" ADD COLUMN "efactor" float DEFAULT 2.5 NOT NULL[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20150406123839"]]
+  [1m[36m (2.6ms)[0m  [1mCOMMIT[0m
+Migrating to AddAttemptToCards (20150406143521)
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36m (4.0ms)[0m  [1mALTER TABLE "cards" ADD COLUMN "attempt" integer DEFAULT 1 NOT NULL[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20150406143521"]]
+  [1m[36m (0.8ms)[0m  [1mCOMMIT[0m
+Migrating to DeleteQualityFromCards (20150406175232)
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36m (0.7ms)[0m  [1mALTER TABLE "cards" DROP "quality"[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20150406175232"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+Migrating to AddQualityToCards (20150406175914)
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (4.8ms)[0m  [1mALTER TABLE "cards" ADD COLUMN "quality" integer DEFAULT 5 NOT NULL[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20150406175914"]]
+  [1m[36m (0.9ms)[0m  [1mCOMMIT[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.4ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+
+
+Started GET "/" for 127.0.0.1 at 2015-05-14 23:03:28 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by MainController#index as HTML
+  Rendered main/index.html.erb within layouts/application (8.8ms)
+  Rendered shared/_header.html.erb (2.7ms)
+  Rendered shared/_alert_notice.html.erb (0.8ms)
+Completed 200 OK in 1416ms (Views: 1404.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2015-05-14 23:03:30 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-05-14 23:03:30 +0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-05-14 23:03:30 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-05-14 23:03:30 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-05-14 23:03:30 +0200
+
+
+Started GET "/" for ::1 at 2015-05-14 23:12:23 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (1.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+[Rollbar] Reporting exception: The controller-level `respond_to' feature has been extracted to the `responders` gem. Add it to your Gemfile to continue using this feature:
+  gem 'responders', '~> 2.0'
+Consult the Rails upgrade guide for details.
+[Rollbar] Scheduling payload
+[Rollbar] Sending payload
+[Rollbar] Got unexpected status code from Rollbar api: 400
+[Rollbar] Response: {
+  "err": 1,
+  "message": "access token required"
+}
+[Rollbar] Details: https://rollbar.com/instance/uuid?uuid=dce17afe-41d8-4146-a134-6149e4c3ecd1 (only available if report was successful)
+[Rollbar] Exception uuid saved in env: dce17afe-41d8-4146-a134-6149e4c3ecd1
+[Rollbar] Reporting exception: The controller-level `respond_to' feature has been extracted to the `responders` gem. Add it to your Gemfile to continue using this feature:
+  gem 'responders', '~> 2.0'
+Consult the Rails upgrade guide for details.
+[Rollbar] Scheduling payload
+[Rollbar] Sending payload
+[Rollbar] Got unexpected status code from Rollbar api: 400
+[Rollbar] Response: {
+  "err": 1,
+  "message": "access token required"
+}
+[Rollbar] Details: https://rollbar.com/instance/uuid?uuid=150155bf-9b7c-49be-9385-dc5fdf7753fd (only available if report was successful)
+[Rollbar] Exception uuid saved in env: 150155bf-9b7c-49be-9385-dc5fdf7753fd
+
+ActionController::RoutingError (The controller-level `respond_to' feature has been extracted to the `responders` gem. Add it to your Gemfile to continue using this feature:
+  gem 'responders', '~> 2.0'
+Consult the Rails upgrade guide for details.):
+  app/controllers/main_controller.rb:2:in `<class:MainController>'
+  app/controllers/main_controller.rb:1:in `<top (required)>'
+
+
+  Rendered /Users/kirillshirinkin/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (6.5ms)
+  Rendered /Users/kirillshirinkin/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (17.5ms)
+  Rendered /Users/kirillshirinkin/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (19.4ms)
+  Rendered /Users/kirillshirinkin/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (22.5ms)
+  Rendered /Users/kirillshirinkin/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (180.0ms)
+
+
+Started GET "/" for ::1 at 2015-05-14 23:12:51 +0200
+[Rollbar] Reporting exception: The controller-level `respond_to' feature has been extracted to the `responders` gem. Add it to your Gemfile to continue using this feature:
+  gem 'responders', '~> 2.0'
+Consult the Rails upgrade guide for details.
+[Rollbar] Scheduling payload
+[Rollbar] Sending payload
+[Rollbar] Got unexpected status code from Rollbar api: 400
+[Rollbar] Response: {
+  "err": 1,
+  "message": "access token required"
+}
+[Rollbar] Details: https://rollbar.com/instance/uuid?uuid=02cad139-c1dc-4573-8fa0-fc091e0c3e71 (only available if report was successful)
+[Rollbar] Exception uuid saved in env: 02cad139-c1dc-4573-8fa0-fc091e0c3e71
+[Rollbar] Reporting exception: The controller-level `respond_to' feature has been extracted to the `responders` gem. Add it to your Gemfile to continue using this feature:
+  gem 'responders', '~> 2.0'
+Consult the Rails upgrade guide for details.
+[Rollbar] Scheduling payload
+[Rollbar] Sending payload
+[Rollbar] Got unexpected status code from Rollbar api: 400
+[Rollbar] Response: {
+  "err": 1,
+  "message": "access token required"
+}
+[Rollbar] Details: https://rollbar.com/instance/uuid?uuid=b20da015-bbd9-4bd3-b592-1f4852635356 (only available if report was successful)
+[Rollbar] Exception uuid saved in env: b20da015-bbd9-4bd3-b592-1f4852635356
+
+ActionController::RoutingError (The controller-level `respond_to' feature has been extracted to the `responders` gem. Add it to your Gemfile to continue using this feature:
+  gem 'responders', '~> 2.0'
+Consult the Rails upgrade guide for details.):
+  app/controllers/main_controller.rb:2:in `<class:MainController>'
+  app/controllers/main_controller.rb:1:in `<top (required)>'
+
+
+  Rendered /Users/kirillshirinkin/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (7.2ms)
+  Rendered /Users/kirillshirinkin/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (16.2ms)
+  Rendered /Users/kirillshirinkin/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (3.5ms)
+  Rendered /Users/kirillshirinkin/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (3.2ms)
+  Rendered /Users/kirillshirinkin/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (133.8ms)
+
+
+Started GET "/" for ::1 at 2015-05-14 23:13:05 +0200
+Processing by MainController#index as HTML
+  Rendered main/index.html.erb within layouts/application (22.3ms)
+  Rendered shared/_header.html.erb (8.3ms)
+  Rendered shared/_alert_notice.html.erb (1.8ms)
+Completed 200 OK in 1837ms (Views: 1827.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for ::1 at 2015-05-14 23:13:07 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for ::1 at 2015-05-14 23:13:07 +0200
+
+
+Started GET "/assets/application.css?body=1" for ::1 at 2015-05-14 23:13:07 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for ::1 at 2015-05-14 23:13:07 +0200
+
+
+Started GET "/assets/application.js?body=1" for ::1 at 2015-05-14 23:13:07 +0200
+
+
+Started GET "/en/users/new" for ::1 at 2015-05-14 23:14:27 +0200
+Processing by Home::UsersController#new as HTML
+  Parameters: {"locale"=>"en"}
+  Rendered home/users/_form.html.erb (85.3ms)
+  Rendered home/users/new.html.erb within layouts/application (87.1ms)
+  Rendered shared/_header.html.erb (1.2ms)
+  Rendered shared/_alert_notice.html.erb (0.5ms)
+Completed 200 OK in 151ms (Views: 110.7ms | ActiveRecord: 7.2ms)
+[Rollbar] Scheduling payload
+[Rollbar] Sending payload
+[Rollbar] Got unexpected status code from Rollbar api: 400
+[Rollbar] Response: {
+  "err": 1,
+  "message": "access token required"
+}
+[Rollbar] Details: https://rollbar.com/instance/uuid?uuid=9c77ecb0-f1c3-47d4-b4e4-25846851eac6 (only available if report was successful)
+  [1m[36m (0.9ms)[0m  [1mDROP DATABASE IF EXISTS "flashcards_course_test"[0m
+  [1m[35m (398.2ms)[0m  CREATE DATABASE "flashcards_course_test" ENCODING = 'utf8'
+  [1m[36mSQL (2.0ms)[0m  [1mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  [1m[35m (13.1ms)[0m  CREATE TABLE "authentications" ("id" serial primary key, "user_id" integer NOT NULL, "provider" character varying NOT NULL, "uid" character varying NOT NULL, "created_at" timestamp, "updated_at" timestamp) 
+  [1m[36m (1.5ms)[0m  [1mCREATE  INDEX  "index_authentications_on_provider_and_uid" ON "authentications" USING btree ("provider", "uid")[0m
+  [1m[35m (4.5ms)[0m  CREATE TABLE "blocks" ("id" serial primary key, "title" character varying NOT NULL, "created_at" timestamp, "updated_at" timestamp, "user_id" integer NOT NULL) 
+  [1m[36m (5.7ms)[0m  [1mCREATE TABLE "cards" ("id" serial primary key, "original_text" text, "translated_text" text, "review_date" timestamp NOT NULL, "created_at" timestamp, "updated_at" timestamp, "user_id" integer NOT NULL, "image" character varying, "block_id" integer NOT NULL, "interval" integer DEFAULT 1 NOT NULL, "repeat" integer DEFAULT 1 NOT NULL, "efactor" float DEFAULT 2.5 NOT NULL, "attempt" integer DEFAULT 1 NOT NULL, "quality" integer DEFAULT 5 NOT NULL) [0m
+  [1m[35m (3.9ms)[0m  CREATE TABLE "users" ("id" serial primary key, "email" character varying, "crypted_password" character varying, "created_at" timestamp, "updated_at" timestamp, "salt" character varying, "remember_me_token" character varying, "remember_me_token_expires_at" timestamp, "reset_password_token" character varying, "reset_password_token_expires_at" timestamp, "reset_password_email_sent_at" timestamp, "current_block_id" integer, "locale" character varying) 
+  [1m[36m (1.3ms)[0m  [1mCREATE UNIQUE INDEX  "index_users_on_email" ON "users" USING btree ("email")[0m
+  [1m[35m (1.3ms)[0m  CREATE  INDEX  "index_users_on_remember_me_token" ON "users" USING btree ("remember_me_token")
+  [1m[36m (1.3ms)[0m  [1mCREATE  INDEX  "index_users_on_reset_password_token" ON "users" USING btree ("reset_password_token")[0m
+  [1m[35m (2.3ms)[0m  CREATE TABLE "schema_migrations" ("version" character varying NOT NULL) 
+  [1m[36m (0.9ms)[0m  [1mCREATE UNIQUE INDEX  "unique_schema_migrations" ON "schema_migrations"  ("version")[0m
+  [1m[35m (0.4ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36m (0.6ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20150406175914')[0m
+  [1m[35m (0.9ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20150324181429')
+  [1m[36m (0.4ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20150325070602')[0m
+  [1m[35m (0.3ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20150327203129')
+  [1m[36m (0.3ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20150327203526')[0m
+  [1m[35m (0.3ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20150327220548')
+  [1m[36m (0.3ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20150329103805')[0m
+  [1m[35m (0.3ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20150329103806')
+  [1m[36m (0.4ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20150329103807')[0m
+  [1m[35m (0.3ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20150329171607')
+  [1m[36m (0.3ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20150329200538')[0m
+  [1m[35m (0.3ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20150330165146')
+  [1m[36m (0.3ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20150330194042')[0m
+  [1m[35m (0.3ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20150330194306')
+  [1m[36m (0.4ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20150330194536')[0m
+  [1m[35m (0.3ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20150330200230')
+  [1m[36m (0.3ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20150331102819')[0m
+  [1m[35m (0.3ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20150401155428')
+  [1m[36m (0.3ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20150401155753')[0m
+  [1m[35m (0.3ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20150401160441')
+  [1m[36m (0.2ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20150402104316')[0m
+  [1m[35m (0.3ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20150403222932')
+  [1m[36m (0.3ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20150404104501')[0m
+  [1m[35m (0.3ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20150405115143')
+  [1m[36m (0.2ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20150405165550')[0m
+  [1m[35m (0.2ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20150405175629')
+  [1m[36m (0.2ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20150405180053')[0m
+  [1m[35m (0.2ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20150406123839')
+  [1m[36m (0.2ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20150406143521')[0m
+  [1m[35m (0.2ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20150406175232')

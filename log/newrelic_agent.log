@@ -1,0 +1,106 @@
+# Logfile created on 2015-05-14 23:01:49 +0200 by logger.rb/44203
+[05/14/15 23:01:49 +0200 Kirills-MacBook-Pro.local (90701)] INFO : Starting the New Relic agent in "development" environment.
+[05/14/15 23:01:49 +0200 Kirills-MacBook-Pro.local (90701)] INFO : To prevent agent startup add a NEWRELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[05/14/15 23:01:49 +0200 Kirills-MacBook-Pro.local (90701)] INFO : Reading configuration from config/newrelic.yml (/Users/kirillshirinkin/learning/flashcards)
+[05/14/15 23:01:49 +0200 Kirills-MacBook-Pro.local (90701)] INFO : New Relic Agent Developer Mode enabled.
+[05/14/15 23:01:49 +0200 Kirills-MacBook-Pro.local (90701)] INFO : Environment: development
+[05/14/15 23:01:49 +0200 Kirills-MacBook-Pro.local (90701)] INFO : Dispatcher: webrick
+[05/14/15 23:01:49 +0200 Kirills-MacBook-Pro.local (90701)] INFO : Application: Flashcards (Development)
+[05/14/15 23:01:49 +0200 Kirills-MacBook-Pro.local (90701)] WARN : No license key found. This often means your newrelic.yml file was not found, or it lacks a section for the running environment, 'development'. You may also want to try linting your newrelic.yml to ensure it is valid YML.
+[05/14/15 23:01:49 +0200 Kirills-MacBook-Pro.local (90701)] INFO : Installing ActiveRecord 4 instrumentation
+[05/14/15 23:01:49 +0200 Kirills-MacBook-Pro.local (90701)] INFO : Installing middleware-based Excon instrumentation
+[05/14/15 23:01:49 +0200 Kirills-MacBook-Pro.local (90701)] INFO : Installing Net instrumentation
+[05/14/15 23:01:49 +0200 Kirills-MacBook-Pro.local (90701)] INFO : Installing deferred Rack instrumentation
+[05/14/15 23:01:49 +0200 Kirills-MacBook-Pro.local (90701)] INFO : Installing Rack::Builder middleware instrumentation
+[05/14/15 23:01:49 +0200 Kirills-MacBook-Pro.local (90701)] INFO : Installing Rails 3+ middleware instrumentation
+[05/14/15 23:01:49 +0200 Kirills-MacBook-Pro.local (90701)] INFO : Installing Rails 4 Controller instrumentation
+[05/14/15 23:01:49 +0200 Kirills-MacBook-Pro.local (90701)] INFO : Installing Rails 4 view instrumentation
+[05/14/15 23:01:49 +0200 Kirills-MacBook-Pro.local (90701)] INFO : Installing Rails 4 Error instrumentation
+[05/14/15 23:01:49 +0200 Kirills-MacBook-Pro.local (90701)] INFO : Finished instrumentation
+[05/14/15 23:01:49 +0200 Kirills-MacBook-Pro.local (90701)] INFO : Doing deferred dependency-detection before Rack startup
+[05/14/15 23:02:28 +0200 Kirills-MacBook-Pro.local (90701)] ERROR : Invalid license key, please contact support@newrelic.com
+[05/14/15 23:02:28 +0200 Kirills-MacBook-Pro.local (90701)] ERROR : Visit NewRelic.com to obtain a valid license key, or to upgrade your account.
+[05/14/15 23:02:33 +0200 Kirills-MacBook-Pro.local (90701)] INFO : Starting Agent shutdown
+[05/14/15 23:03:26 +0200 Kirills-MacBook-Pro.local (90809)] INFO : Starting the New Relic agent in "development" environment.
+[05/14/15 23:03:26 +0200 Kirills-MacBook-Pro.local (90809)] INFO : To prevent agent startup add a NEWRELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[05/14/15 23:03:26 +0200 Kirills-MacBook-Pro.local (90809)] INFO : Reading configuration from config/newrelic.yml (/Users/kirillshirinkin/learning/flashcards)
+[05/14/15 23:03:26 +0200 Kirills-MacBook-Pro.local (90809)] INFO : New Relic Agent Developer Mode enabled.
+[05/14/15 23:03:26 +0200 Kirills-MacBook-Pro.local (90809)] INFO : Environment: development
+[05/14/15 23:03:26 +0200 Kirills-MacBook-Pro.local (90809)] INFO : Dispatcher: webrick
+[05/14/15 23:03:26 +0200 Kirills-MacBook-Pro.local (90809)] INFO : Application: Flashcards (Development)
+[05/14/15 23:03:26 +0200 Kirills-MacBook-Pro.local (90809)] WARN : No license key found. This often means your newrelic.yml file was not found, or it lacks a section for the running environment, 'development'. You may also want to try linting your newrelic.yml to ensure it is valid YML.
+[05/14/15 23:03:26 +0200 Kirills-MacBook-Pro.local (90809)] INFO : Installing ActiveRecord 4 instrumentation
+[05/14/15 23:03:26 +0200 Kirills-MacBook-Pro.local (90809)] INFO : Installing middleware-based Excon instrumentation
+[05/14/15 23:03:26 +0200 Kirills-MacBook-Pro.local (90809)] INFO : Installing Net instrumentation
+[05/14/15 23:03:26 +0200 Kirills-MacBook-Pro.local (90809)] INFO : Installing deferred Rack instrumentation
+[05/14/15 23:03:26 +0200 Kirills-MacBook-Pro.local (90809)] INFO : Installing Rack::Builder middleware instrumentation
+[05/14/15 23:03:26 +0200 Kirills-MacBook-Pro.local (90809)] INFO : Installing Rails 3+ middleware instrumentation
+[05/14/15 23:03:26 +0200 Kirills-MacBook-Pro.local (90809)] INFO : Installing Rails 4 Controller instrumentation
+[05/14/15 23:03:26 +0200 Kirills-MacBook-Pro.local (90809)] INFO : Installing Rails 4 view instrumentation
+[05/14/15 23:03:26 +0200 Kirills-MacBook-Pro.local (90809)] INFO : Installing Rails 4 Error instrumentation
+[05/14/15 23:03:26 +0200 Kirills-MacBook-Pro.local (90809)] INFO : Finished instrumentation
+[05/14/15 23:03:26 +0200 Kirills-MacBook-Pro.local (90809)] INFO : Doing deferred dependency-detection before Rack startup
+[05/14/15 23:03:29 +0200 Kirills-MacBook-Pro.local (90809)] ERROR : Invalid license key, please contact support@newrelic.com
+[05/14/15 23:03:29 +0200 Kirills-MacBook-Pro.local (90809)] ERROR : Visit NewRelic.com to obtain a valid license key, or to upgrade your account.
+[05/14/15 23:03:48 +0200 Kirills-MacBook-Pro.local (90809)] INFO : Starting Agent shutdown
+[05/14/15 23:12:08 +0200 Kirills-MacBook-Pro.local (91706)] INFO : Starting the New Relic agent in "development" environment.
+[05/14/15 23:12:08 +0200 Kirills-MacBook-Pro.local (91706)] INFO : To prevent agent startup add a NEWRELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[05/14/15 23:12:08 +0200 Kirills-MacBook-Pro.local (91706)] INFO : Reading configuration from config/newrelic.yml (/Users/kirillshirinkin/learning/flashcards)
+[05/14/15 23:12:08 +0200 Kirills-MacBook-Pro.local (91706)] INFO : New Relic Agent Developer Mode enabled.
+[05/14/15 23:12:08 +0200 Kirills-MacBook-Pro.local (91706)] INFO : Environment: development
+[05/14/15 23:12:08 +0200 Kirills-MacBook-Pro.local (91706)] INFO : Dispatcher: webrick
+[05/14/15 23:12:08 +0200 Kirills-MacBook-Pro.local (91706)] INFO : Application: Flashcards (Development)
+[05/14/15 23:12:08 +0200 Kirills-MacBook-Pro.local (91706)] WARN : No license key found. This often means your newrelic.yml file was not found, or it lacks a section for the running environment, 'development'. You may also want to try linting your newrelic.yml to ensure it is valid YML.
+[05/14/15 23:12:08 +0200 Kirills-MacBook-Pro.local (91706)] INFO : Installing ActiveJob instrumentation
+[05/14/15 23:12:08 +0200 Kirills-MacBook-Pro.local (91706)] INFO : Installing ActiveRecord 4 instrumentation
+[05/14/15 23:12:08 +0200 Kirills-MacBook-Pro.local (91706)] INFO : Installing middleware-based Excon instrumentation
+[05/14/15 23:12:08 +0200 Kirills-MacBook-Pro.local (91706)] INFO : Installing Net instrumentation
+[05/14/15 23:12:08 +0200 Kirills-MacBook-Pro.local (91706)] INFO : Installing deferred Rack instrumentation
+[05/14/15 23:12:08 +0200 Kirills-MacBook-Pro.local (91706)] INFO : Installing Rack::Builder middleware instrumentation
+[05/14/15 23:12:08 +0200 Kirills-MacBook-Pro.local (91706)] INFO : Installing Rails 3+ middleware instrumentation
+[05/14/15 23:12:08 +0200 Kirills-MacBook-Pro.local (91706)] INFO : Installing Rails 4 Controller instrumentation
+[05/14/15 23:12:08 +0200 Kirills-MacBook-Pro.local (91706)] INFO : Installing Rails 4 view instrumentation
+[05/14/15 23:12:08 +0200 Kirills-MacBook-Pro.local (91706)] INFO : Installing Rails 4 Error instrumentation
+[05/14/15 23:12:08 +0200 Kirills-MacBook-Pro.local (91706)] INFO : Finished instrumentation
+[05/14/15 23:12:08 +0200 Kirills-MacBook-Pro.local (91706)] INFO : Doing deferred dependency-detection before Rack startup
+[05/14/15 23:12:24 +0200 Kirills-MacBook-Pro.local (91706)] ERROR : Invalid license key, please contact support@newrelic.com
+[05/14/15 23:12:24 +0200 Kirills-MacBook-Pro.local (91706)] ERROR : Visit NewRelic.com to obtain a valid license key, or to upgrade your account.
+[05/14/15 23:14:54 +0200 Kirills-MacBook-Pro.local (91706)] INFO : Starting Agent shutdown
+[05/17/15 11:46:44 +0200 Kirills-MacBook-Pro.local (6948)] INFO : Starting the New Relic agent in "development" environment.
+[05/17/15 11:46:44 +0200 Kirills-MacBook-Pro.local (6948)] INFO : To prevent agent startup add a NEWRELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[05/17/15 11:46:44 +0200 Kirills-MacBook-Pro.local (6948)] INFO : Reading configuration from config/newrelic.yml (/Users/kirillshirinkin/Work/fjcorp/flashcards_gold)
+[05/17/15 11:46:44 +0200 Kirills-MacBook-Pro.local (6948)] INFO : New Relic Agent Developer Mode enabled.
+[05/17/15 11:46:44 +0200 Kirills-MacBook-Pro.local (6948)] INFO : Environment: development
+[05/17/15 11:46:44 +0200 Kirills-MacBook-Pro.local (6948)] INFO : No known dispatcher detected.
+[05/17/15 11:46:44 +0200 Kirills-MacBook-Pro.local (6948)] INFO : Application: Flashcards (Development)
+[05/17/15 11:46:44 +0200 Kirills-MacBook-Pro.local (6948)] WARN : No license key found. This often means your newrelic.yml file was not found, or it lacks a section for the running environment, 'development'. You may also want to try linting your newrelic.yml to ensure it is valid YML.
+[05/17/15 11:46:45 +0200 Kirills-MacBook-Pro.local (6948)] INFO : Installing ActiveJob instrumentation
+[05/17/15 11:46:45 +0200 Kirills-MacBook-Pro.local (6948)] INFO : Installing ActiveRecord 4 instrumentation
+[05/17/15 11:46:45 +0200 Kirills-MacBook-Pro.local (6948)] INFO : Installing middleware-based Excon instrumentation
+[05/17/15 11:46:45 +0200 Kirills-MacBook-Pro.local (6948)] INFO : Installing Net instrumentation
+[05/17/15 11:46:45 +0200 Kirills-MacBook-Pro.local (6948)] INFO : Installing deferred Rack instrumentation
+[05/17/15 11:46:45 +0200 Kirills-MacBook-Pro.local (6948)] INFO : Installing Rack::Builder middleware instrumentation
+[05/17/15 11:46:45 +0200 Kirills-MacBook-Pro.local (6948)] INFO : Installing Rails 3+ middleware instrumentation
+[05/17/15 11:46:45 +0200 Kirills-MacBook-Pro.local (6948)] INFO : Installing Rails 4 Controller instrumentation
+[05/17/15 11:46:45 +0200 Kirills-MacBook-Pro.local (6948)] INFO : Installing Rails 4 view instrumentation
+[05/17/15 11:46:45 +0200 Kirills-MacBook-Pro.local (6948)] INFO : Installing Rails 4 Error instrumentation
+[05/17/15 11:46:45 +0200 Kirills-MacBook-Pro.local (6948)] INFO : Finished instrumentation
+[05/17/15 11:47:01 +0200 Kirills-MacBook-Pro.local (6992)] INFO : Starting the New Relic agent in "development" environment.
+[05/17/15 11:47:01 +0200 Kirills-MacBook-Pro.local (6992)] INFO : To prevent agent startup add a NEWRELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[05/17/15 11:47:01 +0200 Kirills-MacBook-Pro.local (6992)] INFO : Reading configuration from config/newrelic.yml (/Users/kirillshirinkin/Work/fjcorp/flashcards_gold)
+[05/17/15 11:47:01 +0200 Kirills-MacBook-Pro.local (6992)] INFO : New Relic Agent Developer Mode enabled.
+[05/17/15 11:47:01 +0200 Kirills-MacBook-Pro.local (6992)] INFO : Environment: development
+[05/17/15 11:47:01 +0200 Kirills-MacBook-Pro.local (6992)] INFO : No known dispatcher detected.
+[05/17/15 11:47:01 +0200 Kirills-MacBook-Pro.local (6992)] INFO : Application: Flashcards (Development)
+[05/17/15 11:47:01 +0200 Kirills-MacBook-Pro.local (6992)] WARN : No license key found. This often means your newrelic.yml file was not found, or it lacks a section for the running environment, 'development'. You may also want to try linting your newrelic.yml to ensure it is valid YML.
+[05/17/15 11:47:01 +0200 Kirills-MacBook-Pro.local (6992)] INFO : Installing ActiveJob instrumentation
+[05/17/15 11:47:01 +0200 Kirills-MacBook-Pro.local (6992)] INFO : Installing ActiveRecord 4 instrumentation
+[05/17/15 11:47:01 +0200 Kirills-MacBook-Pro.local (6992)] INFO : Installing middleware-based Excon instrumentation
+[05/17/15 11:47:01 +0200 Kirills-MacBook-Pro.local (6992)] INFO : Installing Net instrumentation
+[05/17/15 11:47:01 +0200 Kirills-MacBook-Pro.local (6992)] INFO : Installing deferred Rack instrumentation
+[05/17/15 11:47:01 +0200 Kirills-MacBook-Pro.local (6992)] INFO : Installing Rack::Builder middleware instrumentation
+[05/17/15 11:47:01 +0200 Kirills-MacBook-Pro.local (6992)] INFO : Installing Rails 3+ middleware instrumentation
+[05/17/15 11:47:01 +0200 Kirills-MacBook-Pro.local (6992)] INFO : Installing Rails 4 Controller instrumentation
+[05/17/15 11:47:01 +0200 Kirills-MacBook-Pro.local (6992)] INFO : Installing Rails 4 view instrumentation
+[05/17/15 11:47:01 +0200 Kirills-MacBook-Pro.local (6992)] INFO : Installing Rails 4 Error instrumentation
+[05/17/15 11:47:01 +0200 Kirills-MacBook-Pro.local (6992)] INFO : Finished instrumentation
