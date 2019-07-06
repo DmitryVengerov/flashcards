@@ -1,0 +1,12 @@
+development:
+  adapter: postgresql
+  host: db
+  username: postgres_dev
+  password: postgres_dev
+
+test:
+  adapter: postgresql
+  host: db
+  database: flashcards_test
+  username: flashcards
+  password: flashcards

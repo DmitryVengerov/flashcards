@@ -104,3 +104,165 @@
 [05/17/15 11:47:01 +0200 Kirills-MacBook-Pro.local (6992)] INFO : Installing Rails 4 view instrumentation
 [05/17/15 11:47:01 +0200 Kirills-MacBook-Pro.local (6992)] INFO : Installing Rails 4 Error instrumentation
 [05/17/15 11:47:01 +0200 Kirills-MacBook-Pro.local (6992)] INFO : Finished instrumentation
+[06/10/19 18:00:07 +0000 36a39f06da66 (1)] INFO : Starting the New Relic agent in "development" environment.
+[06/10/19 18:00:07 +0000 36a39f06da66 (1)] INFO : To prevent agent startup add a NEWRELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[06/10/19 18:00:07 +0000 36a39f06da66 (1)] INFO : Reading configuration from config/newrelic.yml (/var/www/flashcards)
+[06/10/19 18:00:07 +0000 36a39f06da66 (1)] INFO : New Relic Agent Developer Mode enabled.
+[06/10/19 18:00:07 +0000 36a39f06da66 (1)] INFO : Environment: development
+[06/10/19 18:00:07 +0000 36a39f06da66 (1)] INFO : Dispatcher: webrick
+[06/10/19 18:00:07 +0000 36a39f06da66 (1)] INFO : Application: Flashcards (Development)
+[06/10/19 18:00:07 +0000 36a39f06da66 (1)] WARN : No license key found. This often means your newrelic.yml file was not found, or it lacks a section for the running environment, 'development'. You may also want to try linting your newrelic.yml to ensure it is valid YML.
+[06/10/19 18:00:07 +0000 36a39f06da66 (1)] INFO : Installing deferred Rack instrumentation
+[06/10/19 18:00:07 +0000 36a39f06da66 (1)] INFO : Installing Rack::Builder middleware instrumentation
+[06/10/19 18:00:07 +0000 36a39f06da66 (1)] INFO : Installing Net instrumentation
+[06/10/19 18:00:07 +0000 36a39f06da66 (1)] INFO : Installing ActiveJob instrumentation
+[06/10/19 18:00:07 +0000 36a39f06da66 (1)] INFO : Installing middleware-based Excon instrumentation
+[06/10/19 18:00:07 +0000 36a39f06da66 (1)] INFO : Installing Rails 3+ middleware instrumentation
+[06/10/19 18:00:07 +0000 36a39f06da66 (1)] INFO : Installing ActiveRecord 4 instrumentation
+[06/10/19 18:00:07 +0000 36a39f06da66 (1)] INFO : Installing Rails 4 Error instrumentation
+[06/10/19 18:00:07 +0000 36a39f06da66 (1)] INFO : Installing Rails 4 Controller instrumentation
+[06/10/19 18:00:07 +0000 36a39f06da66 (1)] INFO : Installing Rails 4 view instrumentation
+[06/10/19 18:00:07 +0000 36a39f06da66 (1)] INFO : Finished instrumentation
+[06/10/19 18:00:08 +0000 36a39f06da66 (1)] INFO : Doing deferred dependency-detection before Rack startup
+[06/10/19 18:00:16 +0000 36a39f06da66 (1)] ERROR : Invalid license key
+[06/10/19 18:00:16 +0000 36a39f06da66 (1)] ERROR : Visit NewRelic.com to obtain a valid license key, or to upgrade your account.
+[06/10/19 18:01:36 +0000 0fe57c161f6c (1)] INFO : Starting the New Relic agent in "development" environment.
+[06/10/19 18:01:36 +0000 0fe57c161f6c (1)] INFO : To prevent agent startup add a NEWRELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[06/10/19 18:01:36 +0000 0fe57c161f6c (1)] INFO : Reading configuration from config/newrelic.yml (/var/www/flashcards)
+[06/10/19 18:01:36 +0000 0fe57c161f6c (1)] INFO : New Relic Agent Developer Mode enabled.
+[06/10/19 18:01:36 +0000 0fe57c161f6c (1)] INFO : Environment: development
+[06/10/19 18:01:36 +0000 0fe57c161f6c (1)] INFO : Dispatcher: webrick
+[06/10/19 18:01:36 +0000 0fe57c161f6c (1)] INFO : Application: Flashcards (Development)
+[06/10/19 18:01:36 +0000 0fe57c161f6c (1)] WARN : No license key found. This often means your newrelic.yml file was not found, or it lacks a section for the running environment, 'development'. You may also want to try linting your newrelic.yml to ensure it is valid YML.
+[06/10/19 18:01:36 +0000 0fe57c161f6c (1)] INFO : Installing deferred Rack instrumentation
+[06/10/19 18:01:36 +0000 0fe57c161f6c (1)] INFO : Installing Rack::Builder middleware instrumentation
+[06/10/19 18:01:36 +0000 0fe57c161f6c (1)] INFO : Installing Net instrumentation
+[06/10/19 18:01:36 +0000 0fe57c161f6c (1)] INFO : Installing ActiveJob instrumentation
+[06/10/19 18:01:36 +0000 0fe57c161f6c (1)] INFO : Installing middleware-based Excon instrumentation
+[06/10/19 18:01:36 +0000 0fe57c161f6c (1)] INFO : Installing Rails 3+ middleware instrumentation
+[06/10/19 18:01:36 +0000 0fe57c161f6c (1)] INFO : Installing ActiveRecord 4 instrumentation
+[06/10/19 18:01:36 +0000 0fe57c161f6c (1)] INFO : Installing Rails 4 Error instrumentation
+[06/10/19 18:01:36 +0000 0fe57c161f6c (1)] INFO : Installing Rails 4 Controller instrumentation
+[06/10/19 18:01:36 +0000 0fe57c161f6c (1)] INFO : Installing Rails 4 view instrumentation
+[06/10/19 18:01:36 +0000 0fe57c161f6c (1)] INFO : Finished instrumentation
+[06/10/19 18:01:37 +0000 0fe57c161f6c (1)] INFO : Doing deferred dependency-detection before Rack startup
+[06/10/19 18:01:56 +0000 950cea12dfa3 (1)] INFO : Starting the New Relic agent in "development" environment.
+[06/10/19 18:01:56 +0000 950cea12dfa3 (1)] INFO : To prevent agent startup add a NEWRELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[06/10/19 18:01:56 +0000 950cea12dfa3 (1)] INFO : Reading configuration from config/newrelic.yml (/var/www/flashcards)
+[06/10/19 18:01:56 +0000 950cea12dfa3 (1)] INFO : New Relic Agent Developer Mode enabled.
+[06/10/19 18:01:56 +0000 950cea12dfa3 (1)] INFO : Environment: development
+[06/10/19 18:01:56 +0000 950cea12dfa3 (1)] INFO : Dispatcher: webrick
+[06/10/19 18:01:56 +0000 950cea12dfa3 (1)] INFO : Application: Flashcards (Development)
+[06/10/19 18:01:56 +0000 950cea12dfa3 (1)] WARN : No license key found. This often means your newrelic.yml file was not found, or it lacks a section for the running environment, 'development'. You may also want to try linting your newrelic.yml to ensure it is valid YML.
+[06/10/19 18:01:56 +0000 950cea12dfa3 (1)] INFO : Installing deferred Rack instrumentation
+[06/10/19 18:01:56 +0000 950cea12dfa3 (1)] INFO : Installing Rack::Builder middleware instrumentation
+[06/10/19 18:01:56 +0000 950cea12dfa3 (1)] INFO : Installing Net instrumentation
+[06/10/19 18:01:56 +0000 950cea12dfa3 (1)] INFO : Installing ActiveJob instrumentation
+[06/10/19 18:01:56 +0000 950cea12dfa3 (1)] INFO : Installing middleware-based Excon instrumentation
+[06/10/19 18:01:56 +0000 950cea12dfa3 (1)] INFO : Installing Rails 3+ middleware instrumentation
+[06/10/19 18:01:56 +0000 950cea12dfa3 (1)] INFO : Installing ActiveRecord 4 instrumentation
+[06/10/19 18:01:56 +0000 950cea12dfa3 (1)] INFO : Installing Rails 4 Error instrumentation
+[06/10/19 18:01:56 +0000 950cea12dfa3 (1)] INFO : Installing Rails 4 Controller instrumentation
+[06/10/19 18:01:56 +0000 950cea12dfa3 (1)] INFO : Installing Rails 4 view instrumentation
+[06/10/19 18:01:56 +0000 950cea12dfa3 (1)] INFO : Finished instrumentation
+[06/10/19 18:01:56 +0000 950cea12dfa3 (1)] INFO : Doing deferred dependency-detection before Rack startup
+[06/10/19 18:02:16 +0000 c373db1f80bb (1)] INFO : Starting the New Relic agent in "development" environment.
+[06/10/19 18:02:16 +0000 c373db1f80bb (1)] INFO : To prevent agent startup add a NEWRELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[06/10/19 18:02:16 +0000 c373db1f80bb (1)] INFO : Reading configuration from config/newrelic.yml (/var/www/flashcards)
+[06/10/19 18:02:16 +0000 c373db1f80bb (1)] INFO : New Relic Agent Developer Mode enabled.
+[06/10/19 18:02:16 +0000 c373db1f80bb (1)] INFO : Environment: development
+[06/10/19 18:02:16 +0000 c373db1f80bb (1)] INFO : Dispatcher: webrick
+[06/10/19 18:02:16 +0000 c373db1f80bb (1)] INFO : Application: Flashcards (Development)
+[06/10/19 18:02:16 +0000 c373db1f80bb (1)] WARN : No license key found. This often means your newrelic.yml file was not found, or it lacks a section for the running environment, 'development'. You may also want to try linting your newrelic.yml to ensure it is valid YML.
+[06/10/19 18:02:16 +0000 c373db1f80bb (1)] INFO : Installing deferred Rack instrumentation
+[06/10/19 18:02:16 +0000 c373db1f80bb (1)] INFO : Installing Rack::Builder middleware instrumentation
+[06/10/19 18:02:16 +0000 c373db1f80bb (1)] INFO : Installing Net instrumentation
+[06/10/19 18:02:16 +0000 c373db1f80bb (1)] INFO : Installing ActiveJob instrumentation
+[06/10/19 18:02:16 +0000 c373db1f80bb (1)] INFO : Installing middleware-based Excon instrumentation
+[06/10/19 18:02:16 +0000 c373db1f80bb (1)] INFO : Installing Rails 3+ middleware instrumentation
+[06/10/19 18:02:16 +0000 c373db1f80bb (1)] INFO : Installing ActiveRecord 4 instrumentation
+[06/10/19 18:02:16 +0000 c373db1f80bb (1)] INFO : Installing Rails 4 Error instrumentation
+[06/10/19 18:02:16 +0000 c373db1f80bb (1)] INFO : Installing Rails 4 Controller instrumentation
+[06/10/19 18:02:16 +0000 c373db1f80bb (1)] INFO : Installing Rails 4 view instrumentation
+[06/10/19 18:02:16 +0000 c373db1f80bb (1)] INFO : Finished instrumentation
+[06/10/19 18:02:16 +0000 c373db1f80bb (1)] INFO : Doing deferred dependency-detection before Rack startup
+[06/10/19 18:02:40 +0000 40a5e2ae8b69 (1)] INFO : Starting the New Relic agent in "development" environment.
+[06/10/19 18:02:40 +0000 40a5e2ae8b69 (1)] INFO : To prevent agent startup add a NEWRELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[06/10/19 18:02:40 +0000 40a5e2ae8b69 (1)] INFO : Reading configuration from config/newrelic.yml (/var/www/flashcards)
+[06/10/19 18:02:40 +0000 40a5e2ae8b69 (1)] INFO : New Relic Agent Developer Mode enabled.
+[06/10/19 18:02:40 +0000 40a5e2ae8b69 (1)] INFO : Environment: development
+[06/10/19 18:02:40 +0000 40a5e2ae8b69 (1)] INFO : Dispatcher: webrick
+[06/10/19 18:02:40 +0000 40a5e2ae8b69 (1)] INFO : Application: Flashcards (Development)
+[06/10/19 18:02:40 +0000 40a5e2ae8b69 (1)] WARN : No license key found. This often means your newrelic.yml file was not found, or it lacks a section for the running environment, 'development'. You may also want to try linting your newrelic.yml to ensure it is valid YML.
+[06/10/19 18:02:40 +0000 40a5e2ae8b69 (1)] INFO : Installing deferred Rack instrumentation
+[06/10/19 18:02:40 +0000 40a5e2ae8b69 (1)] INFO : Installing Rack::Builder middleware instrumentation
+[06/10/19 18:02:40 +0000 40a5e2ae8b69 (1)] INFO : Installing Net instrumentation
+[06/10/19 18:02:40 +0000 40a5e2ae8b69 (1)] INFO : Installing ActiveJob instrumentation
+[06/10/19 18:02:40 +0000 40a5e2ae8b69 (1)] INFO : Installing middleware-based Excon instrumentation
+[06/10/19 18:02:40 +0000 40a5e2ae8b69 (1)] INFO : Installing Rails 3+ middleware instrumentation
+[06/10/19 18:02:40 +0000 40a5e2ae8b69 (1)] INFO : Installing ActiveRecord 4 instrumentation
+[06/10/19 18:02:40 +0000 40a5e2ae8b69 (1)] INFO : Installing Rails 4 Error instrumentation
+[06/10/19 18:02:40 +0000 40a5e2ae8b69 (1)] INFO : Installing Rails 4 Controller instrumentation
+[06/10/19 18:02:40 +0000 40a5e2ae8b69 (1)] INFO : Installing Rails 4 view instrumentation
+[06/10/19 18:02:40 +0000 40a5e2ae8b69 (1)] INFO : Finished instrumentation
+[06/10/19 18:02:41 +0000 40a5e2ae8b69 (1)] INFO : Doing deferred dependency-detection before Rack startup
+[06/10/19 18:03:15 +0000 85d1b3561b35 (1)] INFO : Starting the New Relic agent in "development" environment.
+[06/10/19 18:03:15 +0000 85d1b3561b35 (1)] INFO : To prevent agent startup add a NEWRELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[06/10/19 18:03:15 +0000 85d1b3561b35 (1)] INFO : Reading configuration from config/newrelic.yml (/var/www/flashcards)
+[06/10/19 18:03:15 +0000 85d1b3561b35 (1)] INFO : New Relic Agent Developer Mode enabled.
+[06/10/19 18:03:15 +0000 85d1b3561b35 (1)] INFO : Environment: development
+[06/10/19 18:03:15 +0000 85d1b3561b35 (1)] INFO : Dispatcher: webrick
+[06/10/19 18:03:16 +0000 85d1b3561b35 (1)] INFO : Application: Flashcards (Development)
+[06/10/19 18:03:16 +0000 85d1b3561b35 (1)] WARN : No license key found. This often means your newrelic.yml file was not found, or it lacks a section for the running environment, 'development'. You may also want to try linting your newrelic.yml to ensure it is valid YML.
+[06/10/19 18:03:16 +0000 85d1b3561b35 (1)] INFO : Installing deferred Rack instrumentation
+[06/10/19 18:03:16 +0000 85d1b3561b35 (1)] INFO : Installing Rack::Builder middleware instrumentation
+[06/10/19 18:03:16 +0000 85d1b3561b35 (1)] INFO : Installing Net instrumentation
+[06/10/19 18:03:16 +0000 85d1b3561b35 (1)] INFO : Installing ActiveJob instrumentation
+[06/10/19 18:03:16 +0000 85d1b3561b35 (1)] INFO : Installing middleware-based Excon instrumentation
+[06/10/19 18:03:16 +0000 85d1b3561b35 (1)] INFO : Installing Rails 3+ middleware instrumentation
+[06/10/19 18:03:16 +0000 85d1b3561b35 (1)] INFO : Installing ActiveRecord 4 instrumentation
+[06/10/19 18:03:16 +0000 85d1b3561b35 (1)] INFO : Installing Rails 4 Error instrumentation
+[06/10/19 18:03:16 +0000 85d1b3561b35 (1)] INFO : Installing Rails 4 Controller instrumentation
+[06/10/19 18:03:16 +0000 85d1b3561b35 (1)] INFO : Installing Rails 4 view instrumentation
+[06/10/19 18:03:16 +0000 85d1b3561b35 (1)] INFO : Finished instrumentation
+[06/10/19 18:03:16 +0000 85d1b3561b35 (1)] INFO : Doing deferred dependency-detection before Rack startup
+[06/10/19 18:03:55 +0000 e0e506a22c77 (1)] INFO : Starting the New Relic agent in "development" environment.
+[06/10/19 18:03:55 +0000 e0e506a22c77 (1)] INFO : To prevent agent startup add a NEWRELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[06/10/19 18:03:55 +0000 e0e506a22c77 (1)] INFO : Reading configuration from config/newrelic.yml (/var/www/flashcards)
+[06/10/19 18:03:55 +0000 e0e506a22c77 (1)] INFO : New Relic Agent Developer Mode enabled.
+[06/10/19 18:03:55 +0000 e0e506a22c77 (1)] INFO : Environment: development
+[06/10/19 18:03:55 +0000 e0e506a22c77 (1)] INFO : Dispatcher: webrick
+[06/10/19 18:03:55 +0000 e0e506a22c77 (1)] INFO : Application: Flashcards (Development)
+[06/10/19 18:03:55 +0000 e0e506a22c77 (1)] WARN : No license key found. This often means your newrelic.yml file was not found, or it lacks a section for the running environment, 'development'. You may also want to try linting your newrelic.yml to ensure it is valid YML.
+[06/10/19 18:03:55 +0000 e0e506a22c77 (1)] INFO : Installing deferred Rack instrumentation
+[06/10/19 18:03:55 +0000 e0e506a22c77 (1)] INFO : Installing Rack::Builder middleware instrumentation
+[06/10/19 18:03:55 +0000 e0e506a22c77 (1)] INFO : Installing Net instrumentation
+[06/10/19 18:03:55 +0000 e0e506a22c77 (1)] INFO : Installing ActiveJob instrumentation
+[06/10/19 18:03:55 +0000 e0e506a22c77 (1)] INFO : Installing middleware-based Excon instrumentation
+[06/10/19 18:03:55 +0000 e0e506a22c77 (1)] INFO : Installing Rails 3+ middleware instrumentation
+[06/10/19 18:03:55 +0000 e0e506a22c77 (1)] INFO : Installing ActiveRecord 4 instrumentation
+[06/10/19 18:03:55 +0000 e0e506a22c77 (1)] INFO : Installing Rails 4 Error instrumentation
+[06/10/19 18:03:55 +0000 e0e506a22c77 (1)] INFO : Installing Rails 4 Controller instrumentation
+[06/10/19 18:03:55 +0000 e0e506a22c77 (1)] INFO : Installing Rails 4 view instrumentation
+[06/10/19 18:03:55 +0000 e0e506a22c77 (1)] INFO : Finished instrumentation
+[06/10/19 18:03:55 +0000 e0e506a22c77 (1)] INFO : Doing deferred dependency-detection before Rack startup
+[06/13/19 16:40:45 +0000 e0e506a22c77 (1)] INFO : Starting the New Relic agent in "development" environment.
+[06/13/19 16:40:45 +0000 e0e506a22c77 (1)] INFO : To prevent agent startup add a NEWRELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[06/13/19 16:40:45 +0000 e0e506a22c77 (1)] INFO : Reading configuration from config/newrelic.yml (/var/www/flashcards)
+[06/13/19 16:40:45 +0000 e0e506a22c77 (1)] INFO : New Relic Agent Developer Mode enabled.
+[06/13/19 16:40:45 +0000 e0e506a22c77 (1)] INFO : Environment: development
+[06/13/19 16:40:45 +0000 e0e506a22c77 (1)] INFO : Dispatcher: webrick
+[06/13/19 16:40:45 +0000 e0e506a22c77 (1)] INFO : Application: Flashcards (Development)
+[06/13/19 16:40:45 +0000 e0e506a22c77 (1)] WARN : No license key found. This often means your newrelic.yml file was not found, or it lacks a section for the running environment, 'development'. You may also want to try linting your newrelic.yml to ensure it is valid YML.
+[06/13/19 16:40:45 +0000 e0e506a22c77 (1)] INFO : Installing deferred Rack instrumentation
+[06/13/19 16:40:45 +0000 e0e506a22c77 (1)] INFO : Installing Rack::Builder middleware instrumentation
+[06/13/19 16:40:45 +0000 e0e506a22c77 (1)] INFO : Installing Net instrumentation
+[06/13/19 16:40:45 +0000 e0e506a22c77 (1)] INFO : Installing ActiveJob instrumentation
+[06/13/19 16:40:45 +0000 e0e506a22c77 (1)] INFO : Installing middleware-based Excon instrumentation
+[06/13/19 16:40:45 +0000 e0e506a22c77 (1)] INFO : Installing Rails 3+ middleware instrumentation
+[06/13/19 16:40:45 +0000 e0e506a22c77 (1)] INFO : Installing ActiveRecord 4 instrumentation
+[06/13/19 16:40:45 +0000 e0e506a22c77 (1)] INFO : Installing Rails 4 Error instrumentation
+[06/13/19 16:40:45 +0000 e0e506a22c77 (1)] INFO : Installing Rails 4 Controller instrumentation
+[06/13/19 16:40:45 +0000 e0e506a22c77 (1)] INFO : Installing Rails 4 view instrumentation
+[06/13/19 16:40:45 +0000 e0e506a22c77 (1)] INFO : Finished instrumentation
+[06/13/19 16:40:46 +0000 e0e506a22c77 (1)] INFO : Doing deferred dependency-detection before Rack startup

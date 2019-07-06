@@ -4,19 +4,14 @@ services:
   db:
     image: postgres:10.3
     environment:
-      - POSTGRES_USER=admin
-      - POSTGRES_PASSWORD=admin
+      - POSTGRES_USER=postgres_dev
+      - POSTGRES_PASSWORD=postgres_dev
 
-  flashcards:
+  app:
     build: .
-    # CMD [“bundle”, “exec”, puma, “-C”, “config/puma.rb”]
-    # command: bash -c “bundle exec rails s -p 3000 -b ‘0.0.0.0’”
     volumes:
-      - ".:/var/www/flashcards"
-    tty: true
-    stdin_open: true
+      - '.:/var/www/flashcards'
     ports:
       - "3000:3000"
     depends_on:
       - db
-

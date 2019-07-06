@@ -1,12 +1,11 @@
 source 'https://rubygems.org'
 
-ruby '2.4.0'
+ruby '2.1.4'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.2.3'
+gem 'rails', '4.2.1'
 # Use postgresql as the database for Active Record
 gem 'pg'
-gem 'json', github: 'flori/json', branch: 'v1.8'
 gem 'sass-rails', '~> 4.0.3'
 gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.0.0'
